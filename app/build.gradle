@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'Google Inc.:Google APIs:22'
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.daniulive.smart"
+        minSdkVersion 15
+        targetSdkVersion 15
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+
+    //compile 'com.github.weizeng:testJitPack:1.1'
+}
