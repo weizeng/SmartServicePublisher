@@ -10,9 +10,9 @@
 
 package com.daniulive.smartpublisher;
 
-import com.eventhandle.SmartEventCallback;
-
 import java.nio.ByteBuffer;
+
+import com.eventhandle.SmartEventCallback;
 
 public class SmartPublisherJni {
 
