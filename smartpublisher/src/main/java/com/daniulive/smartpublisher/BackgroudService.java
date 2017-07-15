@@ -532,7 +532,7 @@ public class BackgroudService extends Service implements
             return;
         }
 
-        parameters.setPictureSize(videoWidth, videoHight);
+//        parameters.setPictureSize(videoWidth, videoHight);
         parameters.setPreviewSize(videoWidth, videoHight);
         parameters.setPictureFormat(PixelFormat.JPEG);
         parameters.setPreviewFormat(PixelFormat.YCbCr_420_SP);
