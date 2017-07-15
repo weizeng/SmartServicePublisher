@@ -116,7 +116,7 @@ public class BackgroudService extends Service implements
     // default
 
     static {
-        System.load("libSmartPublisher.so");
+        System.loadLibrary("SmartPublisher");
     }
 
     @Override
@@ -139,8 +139,6 @@ public class BackgroudService extends Service implements
         boolean isCameraFaceFront = intent.getExtras().getBoolean(
                 MonitorParamsKey.switchcamera);
 
-//        videoWidth = 1200;
-//        videoHight = 800;
         Log.i(TAG, "===>received monitor request, pushType:" + pushType + ", videoWidth:" + videoWidth + ", videoHight:" + videoHight + ", screenResolution:" + screenResolution + ", isCameraFaceFront:" + isCameraFaceFront);
 
         if (isCameraFaceFront) {
